@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: rgb(46, 46, 46);
+}
+
+#info {
+    position: absolute;
+    bottom: 80px;
+    left: 160px;
+    z-index: 1;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: default;
+}
+
+
+#containerBottom {
+    position: absolute;
+    background-color: rgb(100, 100, 100);
+    width: 100vw;
+    height: 150px;
+    bottom: 0;
+}
+
+#selfie {
+    position: absolute;
+    transition-duration: 0.2s;
+    transition-property: all;
+    filter: grayscale(1);
+    bottom: 0;
+    z-index: 1;
+}
+
+#selfie:hover {
+    filter: grayscale(0);
+}
+
+.link {
+    position: absolute;
+    transition-duration: 0.2s;
+    transition-property: all;
+    filter: grayscale(1);
+}
+
+.link:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+#linkedinLink {
+    margin: auto;
+    top: -100px;
+    bottom: 0;
+    right: 10px;;
+}
+
+#githubLink {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+}
+
+#instagramLink {
+    margin: auto;
+    top: 100px;
+    bottom: 0;
+    right: 10px;
+}
+
+#firstTopic {
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 400px;
+    padding-top: 15px;
+    padding-left: 5px;
+    transition-duration: 0.2s;
+    transition-property: all;
+    cursor: pointer;
+}
+
+#firstTopic:hover {
+    letter-spacing: 5px;
+    width: 300px;
+}
+
+#secondTopic {
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    height: 50px;
+    width: 250px;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 250px;
+    padding-top: 15px;
+    padding-left: 5px;
+    transition-duration: 0.2s;
+    transition-property: all;
+    cursor: pointer;
+}
+
+#secondTopic:hover {
+    letter-spacing: 5px;
+    width: 350px;
+}
+
+#thirdTopic {
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 100px;
+    padding-top: 15px;
+    padding-left: 5px;
+    transition-duration: 0.2s;
+    transition-property: all;
+    cursor: pointer;
+}
+
+#thirdTopic:hover {
+    letter-spacing: 5px;
+    width: 400px;
+}
+
+#backButton {
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 10px;
+    display: none;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+#backButton:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
