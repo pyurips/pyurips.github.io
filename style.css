@@ -6,10 +6,40 @@
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
     color: white;
+    user-select: none;
 }
 
 body {
     background-color: rgb(46, 46, 46);
+    transition-duration: 0.2s;
+    transition-property: all;
+}
+
+#aboutMe {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30vh;
+}
+
+#logoTrybe {
+    position: absolute;
+    z-index: 3;
+    margin: auto;
+    top: -100px;
+    bottom: 0;
+    right: 60px;
+}
+
+#aboutMe {
+    display: none;
 }
 
 #info {
@@ -48,11 +78,9 @@ body {
     position: absolute;
     transition-duration: 0.2s;
     transition-property: all;
-    filter: grayscale(1);
 }
 
 .link:hover {
-    filter: grayscale(0);
     transform: scale(1.1);
 }
 
@@ -84,10 +112,7 @@ body {
     font-weight: bold;
     height: 50px;
     width: 200px;
-    margin: auto;
-    left: 0;
-    top: 0;
-    bottom: 400px;
+    bottom: 150px;
     padding-top: 15px;
     padding-left: 5px;
     transition-duration: 0.2s;
@@ -97,7 +122,8 @@ body {
 
 #firstTopic:hover {
     letter-spacing: 5px;
-    width: 300px;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
 #secondTopic {
@@ -106,11 +132,9 @@ body {
     color: black;
     font-weight: bold;
     height: 50px;
-    width: 250px;
-    margin: auto;
-    left: 0;
-    top: 0;
-    bottom: 250px;
+    width: 200px;
+    left: 200px;
+    bottom: 150px;
     padding-top: 15px;
     padding-left: 5px;
     transition-duration: 0.2s;
@@ -120,31 +144,10 @@ body {
 
 #secondTopic:hover {
     letter-spacing: 5px;
-    width: 350px;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
-#thirdTopic {
-    position: absolute;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    height: 50px;
-    width: 300px;
-    margin: auto;
-    left: 0;
-    top: 0;
-    bottom: 100px;
-    padding-top: 15px;
-    padding-left: 5px;
-    transition-duration: 0.2s;
-    transition-property: all;
-    cursor: pointer;
-}
-
-#thirdTopic:hover {
-    letter-spacing: 5px;
-    width: 400px;
-}
 
 #backButton {
     position: absolute;
@@ -159,4 +162,103 @@ body {
 #backButton:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+#projects {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 80vw;
+    height: 50vh;
+    background-color: rgb(119, 119, 119, 0);
+    margin-bottom: 35vh;
+    transition-property: all;
+    transition-duration: 0.2s;
+    display: none;
+}
+
+#projects:hover {
+    background-color: rgb(119, 119, 119, 0.5); 
+}
+
+.box {
+    position: absolute;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    transition-duration: 0.2s; 
+    transition-property: all;
+}
+
+.box:hover{
+    transform: scale(1.1);
+}
+
+#box01 {
+    top: 10px;
+    left: 10px;
+    background-color: white;
+}
+
+#box02 {
+    top: 10px;
+    left: 150px;
+    text-align: center;
+}
+
+#datalifeLogo {
+    position: absolute;
+    width: 100px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#infoDatalife {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 0, 0, 0.95);
+    bottom: -50px;
+    left: -50px;
+    z-index: 3;
+    padding: 10px;
+    overflow-y: auto;
+    display: none;
+}
+
+#infoDatalife::-webkit-scrollbar {
+    display: none;
+  }
+
+.toolsIcons {
+    position: absolute;
+    z-index: 3;
+    filter: grayscale(1);
+    transition-duration: 0.2s;
+    transition-property: all;
+}
+
+.toolsIcons:hover {
+    filter: grayscale(0);
+}
+
+#jsHtmlCssLogo {
+    top: 95px;
+    left: 160px;
+}
+
+#mySqlLogo {
+    top: 90px;
+    left: 300px;
+}
+
+#nodeLogo {
+    top: 90px;
+    left: 390px;
 }
