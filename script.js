@@ -10,14 +10,6 @@ function hoverFunction (topic) {
     });
 }
 
-function showAboutMe () {
-
-}
-
-function showProjects () {
-
-}
-
 const initialStyleConfigs = {
     firstTopic: [document.getElementById('firstTopic').style.width, document.getElementById('firstTopic').style.margin, document.getElementById('firstTopic').style.top, document.getElementById('firstTopic').style.letterSpacing, document.getElementById('firstTopic').style.cursor, document.getElementById('firstTopic').style.display, document.getElementById('firstTopic').style.left],
     secondTopic: [document.getElementById('secondTopic').style.width, document.getElementById('secondTopic').style.margin, document.getElementById('secondTopic').style.top, document.getElementById('secondTopic').style.letterSpacing, document.getElementById('secondTopic').style.cursor, document.getElementById('secondTopic').style.display, document.getElementById('secondTopic').style.left]
